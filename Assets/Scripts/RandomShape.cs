@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RandomShape : MonoBehaviour
+public class RandomShape : ShapeAttributes
 {
     /*
     Generate a random shape when clicking on a button in the game space. 
@@ -16,6 +16,9 @@ public class RandomShape : MonoBehaviour
 
     public void SpawnShape()
     {
-        Debug.Log("Testing button");
+        // Debug.Log("Testing button");
+        CreateCube();
+        CreateSphere();
+        CreateCylinder();
     }
 }
